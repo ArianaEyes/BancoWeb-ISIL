@@ -38,7 +38,7 @@ export default function TablaClientes() {
   );
 
   return (
-    <div className="p-8 font-sans justify-center h-100">
+    <div className="p-8 font-sans justify-center h-120">
 
       {/* Header */}
       <div className="flex items-center mb-5 flex-wrap gap-4 justify-center">
@@ -61,10 +61,10 @@ export default function TablaClientes() {
       {/* Tabla */}
       {!loading && !error && (
         <div className="tabla overflow-x-auto rounded-xl border w-1/2 border-gray-200 shadow-sm ">
-          <table className="w-full text-sm border-collapse">
+          <table className="w-full text-sm border-collapse" >
             <thead>
-              <tr className="bg-gray-50 border-b border-gray-200">
-                {["#", "Nombre", "DNI", "Email", "Teléfono", "Tipo", "Saldo", "Apertura"].map((h) => (
+              <tr className="bg-gray-50 border-b border-gray-200 h-10" >
+                {["ㅤㅤ#", "Nombre", "DNI", "Email", "Teléfono", "Tipo", "Saldo", "Apertura"].map((h) => (
                   <th key={h} className="px-4 py-3 text-left font-semibold text-gray-600 whitespace-nowrap">
                     {h}
                   </th>
@@ -81,8 +81,8 @@ export default function TablaClientes() {
               ) : filtrados.map((c, i) => {
                 const tipo = tipoBadge[c.tipo_cuenta] ?? { label: c.tipo_cuenta, className: "bg-gray-100 text-gray-600" };
                 return (
-                  <tr key={c.id} className={`border-b border-gray-100 hover:bg-green-50 transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
-                    <td className="px-4 py-3 text-gray-400">{c.id}</td>
+                  <tr key={c.id} className={`border-b border-gray-100 h-7 hover:bg-green-50 transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                    <td className="px-4 py-3 text-gray-400">ㅤㅤ{c.id}</td>
                     <td className="px-4 py-3 font-semibold text-gray-800 whitespace-nowrap">{c.nombre} {c.apellido}</td>
                     <td className="px-4 py-3 text-gray-600 font-mono">{c.dni}</td>
                     <td className="px-4 py-3 text-gray-600">{c.email}</td>

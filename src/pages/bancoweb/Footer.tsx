@@ -5,7 +5,7 @@ const inputBase =
 const Footer = () => {
   return (
     <footer className="w-full h-dvh  text-white flex items-center justify-center">
-          <div className="footer w-200 h-100 m-auto flex flex-col items-center gap-8 text-center">
+          <div className="footer w-200 h-50 m-auto flex flex-col items-center gap-8 text-center">
             <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "2.5rem", fontWeight: 900, lineHeight: 1.2, margin: 0 }}>
             Join Our <span style={{ color: "#16a34a" }}>Newsletter</span>
             <br />
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
           </div>
 
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "3rem", justifyContent: "space-between", paddingBottom: "3rem", marginTop: "3rem" }}>
+          <div style={{display: "flex", flexWrap: "wrap", gap: "3rem", justifyContent: "space-between"}}>
 
         {/* Col 1 — Logo + descripción */}
         <div style={{ maxWidth: 280, display: "flex", flexDirection: "column", gap: "1.5rem" }}>

@@ -1,3 +1,4 @@
+import tel from '../../assets/icons/tel.svg';
 
 const Header = () => {
   return (
@@ -27,7 +28,7 @@ const Header = () => {
       </nav>
       <div className=" zona-tel flex h-16 w-120" >
         {/* Icono de telefono */}
-         <img className="mr-5" src="/public/icons/tel.svg" alt="icono" width={26} height={26} />
+         <img className="mr-5" src={tel} alt="icono" width={26} height={26} />
 
         {/*  Lista */}
         <ul>
