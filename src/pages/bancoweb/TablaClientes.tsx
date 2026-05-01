@@ -38,11 +38,11 @@ export default function TablaClientes() {
   );
 
   return (
-    <div className="p-8 font-sans bg-pink-300 justify-center">
+    <div className="p-8 font-sans justify-center h-100">
 
       {/* Header */}
-      <div className="flex justify-between items-center mb-5 flex-wrap gap-4">
-        <h2 className="text-xl font-bold text-gray-800">
+      <div className="flex items-center mb-5 flex-wrap gap-4 justify-center">
+        <h2 className=" text-xl font-bold text-gray-800">
           Clientes — <span className="text-gray-400 font-normal">{filtrados.length} registros</span>
         </h2>
         <input
@@ -50,7 +50,7 @@ export default function TablaClientes() {
           placeholder="Buscar por nombre, DNI o email..."
           value={busqueda}
           onChange={(e) => setBusqueda(e.target.value)}
-          className="px-4 py-2 rounded-lg border border-gray-200 text-sm bg-gray-50 text-gray-700 outline-none focus:border-green-500 w-64"
+          className="px-4  py-2 rounded-lg border border-gray-200 text-sm bg-gray-50 text-gray-700 outline-none focus:border-green-500 w-64"
         />
       </div>
 
@@ -60,7 +60,7 @@ export default function TablaClientes() {
 
       {/* Tabla */}
       {!loading && !error && (
-        <div className="overflow-x-auto rounded-xl border w-1/2 border-gray-200 shadow-sm ">
+        <div className="tabla overflow-x-auto rounded-xl border w-1/2 border-gray-200 shadow-sm ">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-gray-50 border-b border-gray-200">
