@@ -1,0 +1,197 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.header{
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.579), rgba(0,0,0,0.5)), url(/public/icons/banco.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-nav{
+  position: absolute;
+  top: 2vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.underline{
+  color: #00A650;
+}
+.logo{
+  background-image: url('../public/icons/logo.png');
+  background-size: cover;
+  width: 18vh;
+  height: 8vh;
+}
+
+header nav{
+  display : flex;
+  width: 35%;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+}
+header ul{
+  width: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+
+}
+.zona-tel{
+  justify-content: space-between;
+  align-items: center;
+}
+.mr-5{
+  margin: 1vh;
+}
+.btn-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  font-weight: 600;
+  width:10vw;
+  margin-left: 2vh;
+  border-radius: 50px;
+  background-color: #00A650;
+  
+}
+.busqueda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  border:1px solid rgba(255, 255, 255, 0.253);
+  background-color: #3C4545;
+}
+.title{
+  position: absolute;
+  left: 36%;
+  top: 25vh;
+  width: 30vw;
+  height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+h1{
+  font-family: "Boldonse", system-ui;
+  width: 100%;
+  font-size: 4rem;
+}
+.title-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+.ff{
+  font-family: "Boldonse";
+  font-size: .8rem;
+  letter-spacing: .5px;
+}
+.font-co{
+  color: #212E3B;
+  width: 30%;
+}
+.font-cg{
+  width: 65%;
+  color: #00A650;
+}
+.title-main{
+  margin: 0  auto;
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.title-main h1{
+  font-size: 4rem;
+  margin-top: 15vh;
+  margin-bottom: 4vh;
+  display: flex;
+}
+.cards{
+  margin: 5vh auto 0;
+}
+.card{
+  box-shadow: none;
+  border: 1px solid rgba(128, 128, 128, 0.201);
+  padding: 4vh;
+}
+.card h2{
+  font-size: 1.6rem;
+}
+.card p{
+  font-size: 1.2rem;
+}
+svg {
+  fill: black; /* Cambia el relleno */
+  stroke: black; /* Cambia el contorno, si aplica */
+}
+.circle{
+  margin: 0 auto 2vh ;
+  padding: 2vh;
+}
+main{
+  height: 75vh;
+}
+input,textarea{
+  padding: 2vh;
+}
+textarea{
+  border-radius: 25px;
+}
+.formulario-section{
+  margin-top: 20vh;
+}
+.left{
+  margin-left: 10vh;
+}
+form{
+  width: 80vh;
+  margin-right: 10vh;
+}
+.right button{
+  padding: 2vh;
+  font-size: 1.05rem;
+}
+footer{
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.544)), url(/public/icons/pagar.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-contact-f{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0vh;
+  font-weight: 600;
+  width:10vw;
+  margin-left: 2vh;
+  border-radius: 50px;
+  background-color: #00A650;
+  
+}
+.footer{
+  margin-top: 10vh;
+}
